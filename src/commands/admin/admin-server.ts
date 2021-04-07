@@ -35,7 +35,8 @@ export const Routes = ExportRoutes(
     permissions: {
       restricted: true,
       restrictedTo: [
-        '146439529824256000' // Emma#1366
+        '715198203598864485', //Johanna
+            '491343519374376962' //Puzzle
       ]
     },
     validate: '/admin:string/restart:string/bot:string/seconds?=number'
@@ -50,7 +51,7 @@ export const Routes = ExportRoutes(
     permissions: {
       restricted: true,
       restrictedTo: [
-        '146439529824256000' // Emma#1366
+        '715198203598864485'  //Johanna
       ]
     },
     validate: '/admin:string/bot:string/status:string/message:string/text=string'
@@ -96,6 +97,7 @@ export async function pingPong(routed: RouterRouted) {
     )
   }
 
+  routed.bot.Log.Command.log(`${routed.message.content} response => pong ${ms}ms`)
   return true
 }
 
