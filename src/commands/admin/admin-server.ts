@@ -36,7 +36,8 @@ export const Routes = ExportRoutes(
       restricted: true,
       restrictedTo: [
         '715198203598864485', //Johanna
-            '491343519374376962' //Puzzle
+        '491343519374376962', //Puzzle
+	    '209056319905202176' //meins
       ]
     },
     validate: '/admin:string/restart:string/bot:string/seconds?=number'
@@ -51,7 +52,8 @@ export const Routes = ExportRoutes(
     permissions: {
       restricted: true,
       restrictedTo: [
-        '715198203598864485'  //Johanna
+        '715198203598864485',  //Johanna
+		'209056319905202176' //meins
       ]
     },
     validate: '/admin:string/bot:string/status:string/message:string/text=string'

@@ -11,7 +11,8 @@ export const Routes = ExportRoutes({
     defaultEnabled: false,
     restrictedTo: [
       '715198203598864485', //Johanna
-            '491343519374376962' //Puzzle
+      '491343519374376962', //Puzzle
+	  '209056319905202176' //meins
     ]
   },
   validate: '/admin:string/ck:string/stats:string/refresh:string'
